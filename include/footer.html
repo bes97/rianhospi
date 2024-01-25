@@ -1,0 +1,106 @@
+<div class="footer">
+
+  <button class="linktop">위로가기</button>
+  
+  <div class="wpc">
+
+    <div class="foot_top flexspace">
+      <div class="left"><a href="./index.html" class="logo_img">로고</a></div>
+      <div class="right footgnb">
+        <ul class="fndepth1"></ul>
+      </div>
+    </div>
+   
+    <div class="foot_bot flexspace">
+      <div class="left">
+        <p><a href="tel:02-931-7528" class="tel">02.931.7528</a></p>
+        <p>월 / 수 / 목 / 금  |  오전 9시 30분 - 오후 6시 30분</p>
+        <p>화 (야간진료)  |  오전 9시 30분 - 오후 9시</p>
+        <p>토요일  |  오전 9시 30분 - 오후 2시</p>
+        <p>점심시간  |  오후 1시 -오후 2시</p>
+      </div>
+      <div class="right">
+        <div class="fnsns sns">
+          <a href="#" title="카카오톡" class="sns1"></a>
+          <a href="#" title="네이버" class="sns2"></a>
+          <a href="#" title="블로그" class="sns3"></a>
+          <a href="#" title="인스타" class="sns4"></a>
+        </div>
+        <div class="footinfo">
+          <div class="company flex_right">
+            <p>Company : 노원 연세리안치과의원 Nowon Yonseirian Dental Clinic</p>
+            <p>Owner : 김유경</p>
+            <p> Business License : 159-77-00416 [사업자정보확인]</p>
+          </div>
+          <div class="address flex_right">
+            <p>Address : 01762 서울특별시 노원구 동일로215길 2 하나빌딩 8층 </p>
+            <p>Chief Privacy Officer : 김유경 (yonseirian2022@gmail.com)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copywrap flex_right">
+      <div class="copyright  flex_right">
+        <a href="http://www.always-design.com/" target="_blank"></a>
+        <p class="engsign">Copyright ⓒ Nowon Yonseirian Dental Clinic. Photo & Designed By</p>
+        <!-- <p class="logo-always"><img src="./img/common/aw.png" alt="언제나, 디자인" /></p> -->
+        <p class="txt-always">언제나, 디자인</p>
+      </div>
+      <div class="admin">
+        <a href="../board/adm" target="_blank" class="btn-admin">관리자로그인</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<style>
+.footer { position: relative;padding-top: 150px;padding-bottom: 100px;background-color: #282828;color: #696969; }
+.footer .logo_img { display: block;width: 200px; height:45px;background: url(../img/common/logo_g.png) no-repeat center center / contain;font-size: 1px;color:transparent; }
+.foot_top { padding-bottom:30px;border-bottom: 1px solid #696969 }
+.foot_bot { padding-top:30px;font-size: 0.7rem; font-family: "Pretendard-Light"; }
+.foot_bot p { margin-bottom: 0.7em;}
+.foot_bot .left { color: #ffffff; }
+.foot_bot .right { width: auto;text-align: right; }
+.footer .tel {display: block; font-size: 1.75rem;margin-bottom: 0.5em; }
+.footer .sns { justify-content: flex-end;margin-bottom: 2em;}
+.footer .sns a { width: 30px;height: 30px; border-radius: 50%;border:1px solid #696969; background-size: 10px auto;}
+.footer .sns a.sns1 { background-image: url(./img/common/sns_g_kakao.png); }
+.footer .sns a.sns2 { background-image: url(./img/common/sns_g_naver.png); }
+.footer .sns a.sns3 { background-image: url(./img/common/sns_g_blog.png); }
+.footer .sns a.sns4 { background-image: url(./img/common/sns_g_insta.png); }
+.footer .admin { width: 100%;margin-top: 1em;text-align: right;font-size: 0.7rem;text-decoration: underline;text-underline-offset: 5px; }
+.footer .copywrap { font-size: 12px; }
+.copywrap .engsign { font-family: 'Lato', sans-serif; font-weight:300 }
+.copywrap  .txt-always { font-family: "Pretendard-Light"; }
+.footgnb ul {
+  display: flex;flex-wrap: nowrap;justify-content: flex-end;gap: 20px;
+  font-size: 0.8rem;letter-spacing: -1px; 
+}
+.footer a:hover{color: #ffffff;}
+.linktop { position: absolute; top: 70px;left: 50%; width: 30px;height: 30px;transform: translateX(-50%);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 0;
+ }
+ .linktop::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: -90%;
+    z-index: 1001;
+    transform: translateX(-6px);
+    background-repeat: no-repeat;
+    background-position: left 0 center;
+    background-image: url(../img/common/arr_top.png);
+    transition: 0.5s;
+}
+.linktop:hover::after { top: -130% }
+</style>
+
+<script src="./js/nav.js"></script>
+<script src="./js/frontend.js"></script>

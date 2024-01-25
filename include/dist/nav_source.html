@@ -1,0 +1,77 @@
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+  //메뉴라우터
+function TopArea() {
+  document.write('<div id="gnbBox">');
+  document.write('<ul id="clfix">');
+  document.write('<li><a href="a0101.html">AA</a></li>');
+  document.write('<li><a href="b0101.html">BB</a></li>');
+  document.write('<li><a href="a0101.html">cc</a></li>');
+  document.write('<li><a href="b0101.html">dd</a></li>');
+  document.write('</ul>');
+  document.write('</div>');
+ };
+
+function LeftMenuAA() {
+  document.write('<div id="Lnbarea">');
+  document.write('<ul id="lnb">');
+  document.write('<li><a href="a0101.html">a01</a>');
+    document.write('<ul id="lnb2depth">');
+    document.write('<li><a href="a0101.html">a0101</a></li>');
+    document.write('<li><a href="a0102.html">a0102</a></li>');
+    document.write('</ul>');
+  document.write('</li>');
+  document.write('</ul>');
+  document.write('</dv>');
+};
+
+function LeftMenuBB() {};
+
+// 메뉴 실행 gnb
+function gnbbox_init(gnbMU) {
+  var $topMenu = $('#gnbbox > ul > li');
+  $topMenu.eq(gnbMU-1).addClass('on');
+};
+
+//lnb
+function lnb_menu(hn,sn) {
+  var $lnb = $("#lnbarea > ul > li");
+  $lnb.eq(hn-1).find(".lnb2depth").children().eq(sn-1).addClass("sel");
+  $lnb.find("ul").hide(); 
+  $lnb.each(function(){
+   if($(this).hasClass("on")) {
+    if($(this).find("ul")){ $(this).find("ul").slideToggle(300);
+    } 
+     $(this).find("> a").addClass("link_1th_ov");
+     $(this).find(".sel > a").addClass("link_2th_ov");
+    }
+  });
+  $lnb.click(function(){
+    if($(this).hasClass('on'))
+      $lnb.removClass("on");
+    $(this).addClass("on");
+            $lnb.find("ul").slideUp(300);
+   if($(this).find("ul")){
+     $(this).find("ul").slideToggle(300);
+   }
+  })
+};
+</script>
+
+<div>
+  [TOPAREA NAV]
+  <script>
+    TopArea();
+  </script>
+  <div>
+    <div class="aside">
+      <h1>메뉴</h1>
+      <script>
+        LeftMenuAA();
+        lnb_menu('1','1');
+      </script>
+    </div>
+    <div class="main">내용</div>
+  </div>
+</div>
+
