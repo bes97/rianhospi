@@ -14,7 +14,7 @@
 .flexgallery_column2 > div img { transform: scale(1.1);transition: 0.3s; }
 .flexgallery_column2 > div:hover img { transform: scale(1); }
 
-.flex { display: flex;align-items: flex-end; }
+.flex { display: flex; }
 .flexwrap { display: flex;flex-wrap: wrap; }
 .flexspace { display: flex;justify-content: space-between; }
 .flexvspace { display: flex;flex-wrap: wrap;align-content:space-around ;}
