@@ -28,12 +28,12 @@ $(function(){
     {depth1:'sub4',depth2:'sub4_4',navhref:'./sub4_4.html',navlabel:'치은 이식술'},
     {depth1:'sub4',depth2:'sub4_5',navhref:'./sub4_5.html',navlabel:'건강보험 적용'},
     
-    {depth1:'sub5',depth2:'sub_0',navhref:'./sub5_1.html',navlabel:'심미치료 클리닉'},
-    {depth1:'sub5',depth2:'sub5_1',navhref:'./sub5_1.html',navlabel:'심미치료의 중요성'},
-    {depth1:'sub5',depth2:'sub5_2',navhref:'./sub5_2.html',navlabel:'라미네이트'},
-    {depth1:'sub5',depth2:'sub5_3',navhref:'./sub5_3.html',navlabel:'올세라믹 크라운'}, 
-    {depth1:'sub5',depth2:'sub5_4',navhref:'./sub5_4.html',navlabel:'전치부 레진'},
-    {depth1:'sub5',depth2:'sub5_5',navhref:'./sub5_5.html',navlabel:'전문가 미백'},       
+    {depth1:'sub5',depth2:'sub_0',navhref:'./sub5.html',navlabel:'심미치료 클리닉'},
+    {depth1:'sub5',depth2:'sub5_1',navhref:'./sub5.html',navlabel:'심미치료의 중요성'},
+    {depth1:'sub5',depth2:'sub5_2',navhref:'./sub5.html#con2',navlabel:'라미네이트'},
+    {depth1:'sub5',depth2:'sub5_3',navhref:'./sub5.html#con3',navlabel:'올세라믹 크라운'}, 
+    {depth1:'sub5',depth2:'sub5_4',navhref:'./sub5.html#con4',navlabel:'전치부 레진'},
+    {depth1:'sub5',depth2:'sub5_5',navhref:'./sub5.html#con5',navlabel:'전문가 미백'},       
     
     {depth1:'sub6',depth2:'sub_0',navhref:'./sub6_1.html',navlabel:'자연치보존 클리닉'},
     {depth1:'sub6',depth2:'sub6_1',navhref:'./sub6_1.html',navlabel:'충치치료'},
