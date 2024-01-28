@@ -43,6 +43,7 @@ html {
   --line: #a0907a;
   --strong: #593085;
   --background: #f8f9fb;
+  --background2: #e6edec;
   --darkback: #282828;
 
   --conpadding: 120px;
@@ -52,14 +53,14 @@ html {
   width: calc(100vw - (100vw - 100%));
   overflow-x: hidden;
 
-  font-size: 20px;
+  font-size: 18px;
 }
 
 body {
   position: relative;
   background-color: #ffffff;
   font-family: "Pretendard-Regular";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--font);
   overflow: hidden;
