@@ -21,12 +21,12 @@ $(function(){
     {depth1:'sub3',depth2:'sub3_8',navhref:'./sub3_8.html',navlabel:'보험 임플란트'},
     {depth1:'sub3',depth2:'sub3_9',navhref:'./sub3_9.html',navlabel:'연세리안 임플란트 종류'},
 
-    {depth1:'sub4',depth2:'sub_0',navhref:'./sub4_1.html',navlabel:'치주치료 클리닉'},
-    {depth1:'sub4',depth2:'sub4_1',navhref:'./sub4_1.html',navlabel:'치주과 전문의의 특별한 치주 치료'},
-    {depth1:'sub4',depth2:'sub4_2',navhref:'./sub4_2.html',navlabel:'치주 치료의 중요성'},
-    {depth1:'sub4',depth2:'sub4_3',navhref:'./sub4_3.html',navlabel:'치주 치료의 종류'},
-    {depth1:'sub4',depth2:'sub4_4',navhref:'./sub4_4.html',navlabel:'치은 이식술'},
-    {depth1:'sub4',depth2:'sub4_5',navhref:'./sub4_5.html',navlabel:'건강보험 적용'},
+    {depth1:'sub4',depth2:'sub_0',navhref:'./sub4.html',navlabel:'치주치료 클리닉'},
+    {depth1:'sub4',depth2:'sub4_1',navhref:'./sub4.html',navlabel:'치주과 전문의의 특별한 치주 치료'},
+    {depth1:'sub4',depth2:'sub4_2',navhref:'./sub4.html#con2',navlabel:'치주 치료의 중요성'},
+    {depth1:'sub4',depth2:'sub4_3',navhref:'./sub4.html#con3',navlabel:'치주 치료의 종류'},
+    {depth1:'sub4',depth2:'sub4_4',navhref:'./sub4.html#con4',navlabel:'치은 이식술'},
+    {depth1:'sub4',depth2:'sub4_5',navhref:'./sub4.html#con5',navlabel:'건강보험 적용'},
     
     {depth1:'sub5',depth2:'sub_0',navhref:'./sub5.html',navlabel:'심미치료 클리닉'},
     {depth1:'sub5',depth2:'sub5_1',navhref:'./sub5.html',navlabel:'심미치료의 중요성'},
@@ -42,12 +42,11 @@ $(function(){
     {depth1:'sub6',depth2:'sub6_4',navhref:'./sub6_4.html',navlabel:'턱관절 치료'},
     {depth1:'sub6',depth2:'sub6_5',navhref:'./sub6_5.html',navlabel:'구강검진'},
     
-    {depth1:'sub7',depth2:'sub_0',navhref:'./sub7_1.html',navlabel:'community'},
+    {depth1:'sub7',depth2:'sub_0',navhref:'./sub7_1.html',navlabel:'커뮤니티'},
     {depth1:'sub7',depth2:'sub7_1',navhref:'./sub7_1.html',navlabel:'온라인상담 및 예약'},
     {depth1:'sub7',depth2:'sub7_2',navhref:'./sub7_2.html',navlabel:'공지사항'},
     {depth1:'sub7',depth2:'sub7_3',navhref:'./sub7_3.html',navlabel:'환자 후기'},
     {depth1:'sub7',depth2:'sub7_4',navhref:'./sub7_4.html',navlabel:'Q & A'},
-    {depth1:'sub7',depth2:'sub7_5',navhref:'./sub7_5.html',navlabel:'회원 관련'},
 
   ];
 
