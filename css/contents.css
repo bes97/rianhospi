@@ -376,7 +376,8 @@
 }
 .sub3_9 .con4 .conttit_wrap .tit { margin-bottom: 20px; }
 .sub3_9 .list .col { padding: 30px !important; }
-.sub3_9 .con4 .txt2 {  }
+.sub3_9 .txt1 { margin-bottom: 10px;  }
+.sub3_9 .txt2 { letter-spacing: -2px;  }
 
 
 /**** sub4 ****/
