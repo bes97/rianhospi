@@ -1,7 +1,7 @@
 body {
   background-color: #f6f6f6;
 }
-body * { transition: 0.3s; }
+.mainpage  * { transition: 0.3s; }
 
 .mainpage h3 { 
   font-size: 1rem;text-transform: uppercase;

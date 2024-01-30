@@ -11,49 +11,202 @@
       </div>
     </nav>
   </div>
-  <div class="depth2 flexspace">
-    <div class="fnsns sns">
-      <a href="#" title="카카오톡" class="sns1"></a>
-      <a href="#" title="네이버" class="sns2"></a>
-      <a href="#" title="블로그" class="sns3"></a>
-      <a href="#" title="인스타" class="sns4"></a>
+  <div class="depth2">
+    <div class="flexspace">
+      <div class="fnsns sns">
+        <a href="#" title="카카오톡" class="sns1"></a>
+        <a href="#" title="네이버" class="sns2"></a>
+        <a href="#" title="블로그" class="sns3"></a>
+        <a href="#" title="인스타" class="sns4"></a>
+      </div>
+      <ul class="fnnavsub "></ul>
     </div>
-    <ul class="fnnavsub "></ul>
   </div>
 </div>
 
+<!-- 모바일전용 -->
+<div class="mo_header only_mo ">
+  <div class="logo_h">
+    <a href="./index.html" class="blanklink logo_img">홈으로가기</a>
+  </div>
+  <button class="nav_btn"><span></span><span></span><span></span></button>
+</div>
+<div class="only_mo nav_wrap">
+  <div class="mo_nav flex">
+    <div class="left">
+      <nav class="gnb">
+        <div class="fngnb_mo depth1">
+          <ul class="fngnbover_mo"></ul>
+        </div>
+      </nav>
+      <div class="fnsns sns">
+        <a href="#" title="카카오톡" class="sns1"></a>
+        <a href="#" title="네이버" class="sns2"></a>
+        <a href="#" title="블로그" class="sns3"></a>
+        <a href="#" title="인스타" class="sns4"></a>
+      </div>
+    </div>
+    <div class="right">
+      <div class="depth2">
+        <ul class="fnnavsub_mo "></ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <style>
-.header { z-index:9999;position: absolute;top:0; left: 0; width: 100%;border-bottom: 1px solid #ffffff20; }
-.header_in { display: flex;justify-content: space-between;align-items: center;color: #ffffff; }
+.header { z-index:9999;position: absolute;top:0; left: 0; width: 100%;border-bottom: 1px solid #ffffff20; transition: 0.2s}
+.header_in { display: flex;justify-content: space-between;align-items: center;color: #ffffff;transition: 0.1s }
 
-.header .logo_img { display: block;width: 200px; height:45px;background: url(./img/common/logo_w.png) no-repeat center center / contain;font-size: 1px;color:transparent; }
+.header .logo_img { display: block;width: 200px; height:45px;background: url(./img/common/logo_w.png) no-repeat center center / contain;font-size: 1px;color:transparent; transition: 0.1s}
 
+.header.on { background-color: #ffffff; }
+.header.on .header_in{ color: var(--primary2); }
+.header.on .logo_img { background-image: url(../img/common/logo_p.png); }
 
 .header .gnb .depth1 ul{ display: flex;justify-content: center;align-items: center; gap: 20px;height: 140px;font-size: 0.9rem;} 
 .header .depth2 { 
+  display: none;
   position: absolute; left: 0; bottom:-100px;
   width: 100%; height: 100px; padding-left: calc((100% - 1600px)/2 + 20px);
   background-color: #ffffff;font-size: 0.8rem;color: var(--primary); 
   }
-.header .depth2 ul{ display: flex;justify-content: center;align-items: center; gap: 20px; width: 100%;height: 100%;}
+.header .depth2 ul{ display: flex;justify-content: center;align-items: center; gap: 20px; width: 100%;height: 100%;white-space: pre;}
 .header .depth2 .sns { height: 100%; }
-.sns { display: flex;align-items:center;gap: clamp(5px,1vw,20px); }
+.sns { display: flex;align-items:center;gap: clamp(5px,1vw,20px); transform: translateY(2px);padding-left: 20px;}
 .sns a{ display: block;width: 15px;height: 15px; background-position: center center;background-size: contain;background-repeat: no-repeat; }
 .sns a.sns1 { background-image: url(./img/common/sns_p_kakao.png); }
 .sns a.sns2 { background-image: url(./img/common/sns_p_naver.png); }
 .sns a.sns3 { background-image: url(./img/common/sns_p_blog.png); }
 .sns a.sns4 { background-image: url(./img/common/sns_p_insta.png); }
+
+/* 모바일용 네비 */
+.only_mo { display: none; }
+.mo_header { 
+  position: absolute;left:0;top:0;z-index:9999;
+  width: 100%; padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff70;
+ }
+ .mo_header .logo_img { 
+  display: block;width: 200px; height:60px;
+  margin-top: 10px;margin-left: 10px;
+  background: url(./img/common/logo_w.png) no-repeat center center / contain;
+  font-size: 1px;color:transparent;
+}
+
+.mo_nav { 
+    position: fixed;left:0;top:0;z-index:9998;
+    width:100%;height:100vh;padding-top:100px;
+    background-color: #ffffff;
+    font-size: 15px; }
+.mo_nav .right {padding-left:5%;}
+.mo_nav .left { flex:0 0 145px; }
+
+.mo_nav .depth1 ul{ 
+  display: block;height: 100%;font-size: 1rem;
+} 
+.mo_nav .depth1 li { padding:5px 10px; }
+.mo_nav .depth1 li.on { background-color: var(--primary2);color:#ffffff }
+.mo_nav .sns { position: absolute;bottom:50px;left:10px; }
+
+.mo_nav .depth2 li { padding: 5px; }
+
+
+.nav_btn {
+    position: absolute;
+    z-index: 99999;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 25px;
+    height: 20px;
+}
+.nav_btn span:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+.nav_btn span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+.nav_btn span:nth-child(2) {
+    top: 9px;left: 5px;
+}
+.nav_btn span:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+}
+
+.nav_wrap.on {display: block;}
+.mo_header.on .logo_img { background-image: url(./img/common/logo_p.png) }
+.mo_header.on .nav_btn span:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+.mo_header.on .nav_btn span:nth-child(2) {
+    opacity: 0;
+}
+.mo_header.on .nav_btn span:nth-child(3) {
+    transform: rotate(-45deg) translate(1px,-1px);
+    transform-origin: bottom left;
+}
+.mo_header.on .nav_btn span {
+    background-color: var(--primary2) !important;
+}
+
+
+  @media all and (max-width:1400px) {
+    .header .depth2 .flexspace { flex-wrap:wrap;justify-content: center; }
+    .header .gnb .depth2 ul { gap: 10px; }
+    .header .depth2 .sns { width: 100%;order:2;justify-content: center;margin-top: 25px; }
+  }
+ @media all and (max-width:1180px) {
+    .header { display: none; }
+    .mo_header.only_mo { display: block; }
+  }
+  @media all and (max-width:768px) { 
+    .mo_header .logo_img { display: block;width: 150px; height:40px; }
+    .nav_btn { top: 20px;}
+  }
 </style>
 
 <script>
  $(function() {
-
+   let btn_flag = 0;
+   $(".nav_wrap").removeClass("on");
+   $(".mo_header").removeClass("on"); 
+   
   // 메뉴클릭시 스크롤막기
   $(".nav_wrap").on("scroll touchmove mousewheel",function(e){
     e.preventDefault()
     e.stopPropagation()
     return false;
   })
+  $(".nav_btn").click(function(){
+    if ( !btn_flag ) {
+      $(".nav_wrap").addClass("on");
+      $(".mo_header").addClass("on");
+      btn_flag = 1;
+    } else {
+        $(".nav_wrap").removeClass("on");
+        $(".mo_header").removeClass("on");
+        btn_flag = 0;
+    }
+  })
+
+
+   $(window).on("resize",function(){ 
+       btn_flag = 0;
+      $(".nav_wrap").removeClass("on");
+      $(".mo_header").removeClass("on"); 
+   })
 
   // // header design by scroll
   // $(window).on('scroll', function() {

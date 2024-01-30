@@ -13,9 +13,13 @@
 .maintop .wpc { height: 100%;color: #ffffff; }
 .lnbtit { width: 100%; height: calc(100%  - 80px);padding-top: 140px;font-size: 1.25rem; }
 .lnb { width: 100%;border-top: 1px solid #ffffff20;color: #e2e2e2; font-size: 0.8rem; }
-.lnb ul{ display: flex;justify-content: center;align-items: center; gap: clamp(10px, 20vw, 60px);height: 80px; }
+.lnb ul{ display: flex;justify-content: center;align-items: center; gap: max(20px,3%);height: 80px;white-space: pre; }
 .lnb .on { color: #ffffff;}
+.lnb.no { opacity: 0; } /* lnb 사용안할 경우 */
 
+@media all and (max-width:1400px) {
+  .lnb ul { gap: 10px; }
+}
 .top_sub1 { background-image: url(../img/sub1/sub1_top.jpg); }
 .top_sub2 { background-image: url(../img/sub2/sub2_top.jpg); }
 .top_sub3 { background-image: url(../img/sub3/sub3_top.jpg); }
