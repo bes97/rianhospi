@@ -11,6 +11,7 @@
   .column4 .col{ width: 25%; }
   .column5 .col{ width: 20%; }
   .column6 .col{ width: calc(100%/6); }
+  .gap { gap: 30px;}
   .column2.gap .col { width: calc((100% - 30px) /2); }
   .column3.gap .col{ width: calc((100% - 60px) /3); }
   .column4.gap .col{ width: calc((100% - 90px) /4); }
@@ -36,8 +37,7 @@
   .flex_hcenter { display: flex;flex-wrap: wrap;align-content: center;justify-content: center; }
   .flex_vcenter { display: flex;flex-wrap: wrap;align-content: center; }
   .flex_right { display: flex;flex-wrap: wrap; justify-content: flex-end; }
-
-  .gap { gap: 20px;}
+  .flex_vend { display: flex;flex-wrap: wrap; align-content: flex-end; }
 
 
   /* 여백 */
@@ -68,8 +68,8 @@
 
 
   /* text */
-  .titwrap, .txt {letter-spacing: -1px;}
-  [class *= "list"] .txt { letter-spacing: -2px; }
+  /* .titwrap, [class *= "txt"] {letter-spacing: -1px;}
+  [class *= "list"] .txt { letter-spacing: -2px; } */
   .subpage .maintitwrap { margin-bottom: 100px; }
   .subpage .titwrap_mid h6 { 
     font-family: "Pretendard-Light";font-size: 1.5rem;color: var(--primary);

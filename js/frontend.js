@@ -15,8 +15,6 @@ $(function(){
   $(".fnsns .sns4").click(function(){ window.open('인스타링크'); })
   
 
-
-
   /* UI */
   var isMobile = false; //initiate as false
   // device detection
@@ -36,7 +34,7 @@ const $wrap = $('.animated-title');
 const $list = $('.animated-title .track');
 let wrapWidth = $wrap.width();
 let listWidth = $list.width();
-const speed = 10; 
+const speed = 30; 
 let $clone = $list.clone();
 $wrap.append($clone);
 function flowBannerAct() {
@@ -54,8 +52,31 @@ function flowBannerAct() {
 
 flowBannerAct();
 
-
-  $(".lazyno").slick({
+$(".lazy").slick({
+  lazyLoad: 'ondemand',
+  slideToShow: 1,
+  slideToScroll: 1,
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  speed: 1000,
+  fade: true,
+  swiper: false,
+  pauseOnHover : true,
+  draggable: true,
+  touchMove : true, 
+  arrows: true,
+  dots: false,
+  responsive: [{
+    breakpoint: 769,
+    settings: {
+      arrows:true,
+      autoplay: true,
+      pauseOnHover : false,
+    }
+  },]
+});
+ $(".lazyno").slick({
     lazyLoad: 'ondemand',
     slideToShow: 1,
     slideToScroll: 1,
@@ -85,7 +106,30 @@ flowBannerAct();
       }
     },]
   });
-  $(".lazyno2").slick({
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    fade: true,
+    asNavFor: '.slider-for',
+    arrows: true,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    centerMode: true,
+    focusOnSelect: true
+  });
+
+ $(".lazyno2").slick({
     lazyLoad: 'ondemand',
     slideToShow: 1,
     slideToScroll: 1,
@@ -114,12 +158,28 @@ flowBannerAct();
       }
     },]
   });
-
-
-
-
-
-
+  $(".center").slick({
+    centerMode: false,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    swiper: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    pauseOnHover : true,
+    draggable: true,
+    touchMove : true,
+    easing: 'linear',
+    responsive: [{
+    breakpoint: 768,
+    settings: {
+      slidesToShow: 2,
+    }
+  },]
+  });
 
 
   /*******************백업***************** */
@@ -204,92 +264,10 @@ flowBannerAct();
 
 
   
-  $(".lazy").slick({
-    lazyLoad: 'ondemand',
-    slideToShow: 1,
-    slideToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    speed: 1000,
-    fade: true,
-    swiper: false,
-    pauseOnHover : true,
-    draggable: true,
-    touchMove : true, 
-    arrows: true,
-    dots: false,
-    responsive: [{
-      breakpoint: 769,
-      settings: {
-        arrows:true,
-        autoplay: true,
-        pauseOnHover : false,
-      }
-    },]
-  });
+
  
 
   
-
-
-  
-  /* 이미지맵 반응형 */
-  $.fn.rwdImageMaps = function() {
-		var $img = this;
-
-		var rwdImageMap = function() {
-			$img.each(function() {
-				if (typeof($(this).attr('usemap')) == 'undefined')
-					return;
-
-				var that = this,
-					$that = $(that);
-
-				// Since WebKit doesn't know the height until after the image has loaded, perform everything in an onload copy
-				$('<img />').on('load', function() {
-					var attrW = 'width',
-						attrH = 'height',
-						w = $that.attr(attrW),
-						h = $that.attr(attrH);
-
-					if (!w || !h) {
-						var temp = new Image();
-						temp.src = $that.attr('src');
-						if (!w)
-							w = temp.width;
-						if (!h)
-							h = temp.height;
-					}
-
-					var wPercent = $that.width()/100,
-						hPercent = $that.height()/100,
-						map = $that.attr('usemap').replace('#', ''),
-						c = 'coords';
-
-					$('map[name="' + map + '"]').find('area').each(function() {
-						var $this = $(this);
-						if (!$this.data(c))
-							$this.data(c, $this.attr(c));
-
-						var coords = $this.data(c).split(','),
-							coordsPercent = new Array(coords.length);
-
-						for (var i = 0; i < coordsPercent.length; ++i) {
-							if (i % 2 === 0)
-								coordsPercent[i] = parseInt(((coords[i]/w)*100)*wPercent);
-							else
-								coordsPercent[i] = parseInt(((coords[i]/h)*100)*hPercent);
-						}
-						$this.attr(c, coordsPercent.toString());
-					});
-				}).attr('src', $that.attr('src'));
-			});
-		};
-
-		$(window).resize(rwdImageMap).trigger('resize');
-		return this;
-	};
 
 })
 
