@@ -70,7 +70,7 @@ $(".lazy").slick({
   responsive: [{
     breakpoint: 769,
     settings: {
-      arrows:true,
+      arrows:false,
       autoplay: true,
       pauseOnHover : false,
     }
@@ -114,7 +114,7 @@ $(".lazy").slick({
     fade: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
   });
   $('.slider-nav').slick({
     slidesToShow: 1,
@@ -126,7 +126,13 @@ $(".lazy").slick({
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
-    focusOnSelect: true
+    focusOnSelect: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: {
+        arrows:false,
+      }
+    },]
   });
 
  $(".lazyno2").slick({
@@ -177,6 +183,7 @@ $(".lazy").slick({
     breakpoint: 768,
     settings: {
       slidesToShow: 2,
+      arrows:false,
     }
   },]
   });
