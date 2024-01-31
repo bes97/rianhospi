@@ -3,7 +3,7 @@
 
 @media all and ( max-width: 1600px ) {
   .philo_area .leftbox {padding: 140px 0 140px 11.25vw; }
-  .repect .left {height: 66vw; padding:120px 6vw;}
+  .repect .left {height: 66vw; padding:max(7vw, 50px) 6vw;}
   .sub1_3 .left { width: 40%;padding-left: 20px; }
   .sub1_3 .right { width: 50%;padding-right: 20px;background: url(../img/sub1/sub1_3_img02.jpg) no-repeat right  center / cover  }
 }
@@ -33,12 +33,13 @@
 
 
 @media all and (max-width: 1024px) {
+
   .sub1_3 .con2 dl {font-size: 16px;}
 }
 
 
 @media all and (max-width: 860px) {
-
+  section.mbcon,section.mbcon50 { margin-bottom:0 !important; }
   .sub1_2 .con1 .wpc { padding:0; }
   .sub1_2 .wpc > .column2 { display: block; }
   .sub1_2 .con1 .content {
@@ -58,6 +59,7 @@
   .academic .flex { display: flex;flex-wrap: wrap;justify-content: center;}
   .academic .backgroundsub { padding: 50px 20px !important; }
   .thesis .flex{display: block;}
+  .thesis .p100 { padding: 20px !important; }
 
   .sub1_3 .flexspace { display: block;}
   .sub1_3 .flexspace .left, .sub1_3 .flexspace .right {width: 100%;}
@@ -74,7 +76,6 @@
   .subpage .maintitwrap {margin-bottom: 50px;}
   .maintop { height: auto;}
   .lnbtit { padding-bottom:30px; }
-
   .subtitwrap h3{ 
     font-size: 1rem;letter-spacing: -1px; }
   .subtitwrap h4 {
@@ -83,6 +84,8 @@
   .subtitwrap h4 span { 
     font-weight: 400;font-size: 16vw;  }
    
+  .sub1_1 .con1 .wpc,  .sub1_1 .con2 .wpc {padding:0;}
+  .philo_area, .sub1_1 .con2 { margin-bottom:0; }
   .philo_area .leftbox { padding: 50px 20px;
   }
   .philo_area .imgwrap { width: 80%; height: 66vw; margin: auto; }
@@ -95,21 +98,25 @@
   .repect .right .titwrap {margin-bottom: 50px;}
   .repect .right .txt { font-size: 1rem;line-height: 1.5em; }
   .repect .subtitwrap { text-align: left; }
+  .repect .right .slider { transform: translateY(0); }
+  .repect .lazyno .slick-dots { bottom: -50px; }
+ 
 
   .sub1_2 .con1 .content {background-position: left top -5%;}
-.sub1_2 .con1 .leftbox { min-height: 90vw;}
-.sub1_2 .con1 .content .subtitwrap {flex: 0 0 120px;}
+  .sub1_2 .con1 .leftbox { min-height: 90vw;}
+  .sub1_2 .con1 .content .subtitwrap {flex: 0 0 120px;}
   .sub1_2 .con1 .content .subtitwrap p.smtxt { font-size: 1rem; }
   .sub1_2 .con1 .content .subtitwrap p.txt {font-size: 2rem;}
   .sub1_2 .con1 .rightbox .bot { margin-bottom: 30px;}
-  
   .sub1_2 section.mbcon50 { margin-bottom: 0 !important; }
   .volunteer .left { padding: 50px 0px; }
   .volunteer .left ._img1, .volunteer .left ._img2 { padding-bottom: 50%; }
   .volunteer .right {padding: 0 0 50px 0;}
+  .volunteer .right > div { width: 100%; }
   .academic .keyword { gap:5px;font-size: 11px; }
   .rollingcustom_img span { width: 130px;}
   .thesis .right {height: 200px;}
+  .sub1_2 .con5 .content.p100 {padding:30px 20px !important}
     
   .sub1_3 h3{margin-bottom: 30px;}
   .sub1_3 .con2 dt,.sub1_3 .con2 dd { width:100%;font-size: 0.9rem; }

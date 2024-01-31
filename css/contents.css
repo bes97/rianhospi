@@ -1,5 +1,5 @@
 /**** sub-common ****/
-
+/* * { transition: 0.2s } */
 .subtitwrap h3{ 
   font-family: 'Nanum Myeongjo', serif; font-weight: 700;font-size: 1.2rem; }
 .subtitwrap h4 {
@@ -48,12 +48,12 @@
   background: url(../img/sub1/sub1_1_img02.jpg) center center / cover;color: #d2bebe; }
 .repect h4 { color: #fff; }
 .repect .linetxt { 
-  padding-bottom: 20px;margin-bottom: 80px;
+  padding-bottom: 20px;margin-bottom: max(5vw,30px);
   border-bottom: 1px solid #ffffff;
   font-family: 'Nanum Myeongjo', serif; font-weight: 400;font-size:1rem;}
 .repect .subtitwrap { text-align: right;}
 .repect .right { text-align: center; }
-.repect .right .titwrap { margin-bottom: var(--conpadding) }
+.repect .right .titwrap { margin-bottom: max(5vw, 30px) }
 .repect .right .titback { 
   position: relative;z-index: -1;padding-top: 1em;
   font-family: "HarlowDuoScript-Regular";font-weight: 400;font-size: 7.5rem;line-height: 0.3em;color: #2f847610;
@@ -61,13 +61,15 @@
  .repect .right .tit { margin-bottom: 20px; font-family: "HarlowDuoSerif-regular";font-weight: 400;font-size: 5rem; color: var(--subcolor_g) }
  .repect .right .subtit { font-family: 'Nanum Myeongjo', serif; font-weight: 400;font-size: 1.4rem;color: var(--subcolor) }
  .repect .right .txt { font-size:1rem;line-height: 1.3em; }
-
+ .repect .right .slider { transform: translateY(-100px); }
+ 
  .sub1_1 .con3 {
   position: relative;
   height: 70vh;  background: url(../img/sub1/sub1_1_img03.jpg) center center / cover;}
 .sub1_1 .con3 .left { 
   padding-left: 10vw;
   color: #ffffff; }
+.sub1_1 .con3 .animated-title { position: absolute; }
 
 .sub1_2 .con1 .content{ 
   background: url(../img/sub1/sub1_2_img01.jpg) no-repeat center center / cover;

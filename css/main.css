@@ -5,7 +5,8 @@ body {
 
 .mainpage h3 { 
   font-size: 1rem;text-transform: uppercase;
-  font-family: "Athena-Regular"; font-weight: normal;}
+  font-family: "Athena-Regular"; font-weight: normal;
+  letter-spacing: 0px;}
 .mainpage h4 {
   font-family: "HarlowDuoSerif-regular";
   font-weight: 400;text-transform: uppercase;
@@ -125,7 +126,8 @@ body {
 .con4 .slider .mark { top:auto; bottom: 50px; text-shadow: 0 0 10px #000000;}
 
 .con4 .slide_d1 .slick-arrow { 
-  bottom: -70px;border-color: #ffffff;background-color: transparent;color: #ffffff;  }
+  bottom: -70px;border-color: #ffffff;background-color: transparent;color: #ffffff; 
+  font-family: 'Lato', sans-serif; font-weight:400;letter-spacing:0; }
 .con4 .slide_d1 .slick-arrow.slick-prev {left: calc(50% - 120px);}
 .con4 .slide_d1 .slick-arrow.slick-next {left: calc(50% + 90px);} 
 .con4 .slide_d1 .slick-arrow.slick-prev::before {
@@ -270,7 +272,7 @@ body {
 
 .con8 {
     width: 100vw;
-    padding:  max(5vw, 70px) 0 0  0;
+    padding:  max(5vw, 70px) 0;
     background: url(../img/main/main_back04.jpg) no-repeat right top / cover;
     color: var(--font);
   }
@@ -298,7 +300,8 @@ body {
 }
 
 .con8 .slide_d1 .slick-arrow { 
-  bottom: -70px;border-color: var(--font);background-color: transparent;color: var(--font);  }
+  bottom: -70px;border-color: var(--font);background-color: transparent;color: var(--font); 
+  font-family: 'Lato', sans-serif; font-weight:400;letter-spacing:0; }
 .con8 .slide_d1 .slick-arrow.slick-prev {left: calc(50% - 120px);}
 .con8 .slide_d1 .slick-arrow.slick-next {left: calc(50% + 90px);} 
 .con8 .slide_d1 .slick-arrow.slick-prev::before {
@@ -338,7 +341,7 @@ body {
   position: relative;
   padding-bottom: 10px;margin-bottom: 20px;
   border-bottom: 1px solid #fff;
-  font-size: 0.9rem;
+  font-size: 0.9rem;line-height:1.75rem;
 }
 .latestwrap .latest_tit::after {
   content: "";

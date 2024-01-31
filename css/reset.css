@@ -29,10 +29,15 @@ html {
   --w-pc: 1600px;
   --w-inside: 80vw;
   --w100v : calc(100vw - (100vw - 100%));
-  --primary: #633d8c;
+  
+  --primary: #633d8c; /* #593085; */
   --primary2: #8a63b5;
+  --primary3: #ab88bb;  /* #987eb6; */
+  --primary4: #b286e3;  /* #987eb6; */
+  --primary5_trans: #59308550;
   --primary2_trans: #8a63b550;
   --primary2_trans10: #8a63b510;
+
   --primback: #8160a680;
   --subcolor_g: #2f8476;
   --subcolor_g2: #97c1ba;

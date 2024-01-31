@@ -70,6 +70,7 @@
   /* text */
   /* .titwrap, [class *= "txt"] {letter-spacing: -1px;}
   [class *= "list"] .txt { letter-spacing: -2px; } */
+
   .subpage .maintitwrap { margin-bottom: 100px; }
   .subpage .titwrap_mid h6 { 
     font-family: "Pretendard-Light";font-size: 1.5rem;color: var(--primary);
@@ -106,7 +107,9 @@
 
   .centertxt { text-align: center; }
   .strong { color: var(--strong); }
-
+  .engsign { font-family: 'Lato', sans-serif; font-weight:300;letter-spacing:0; }
+  .engsignM { font-family: 'Lato', sans-serif; font-weight:400;letter-spacing:0; }
+  .engsignB { font-family: 'Lato', sans-serif; font-weight:700;letter-spacing:0; }
 
   /* imgwrap - 콘텐츠에서 사이즈 개별지정 */
   img { width: 100%; height: 100%; object-fit: cover; }
