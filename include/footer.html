@@ -100,6 +100,21 @@
     transition: 0.5s;
 }
 .linktop:hover::after { top: -130% }
+
+@media all and (max-width:1180px) {
+  .footer .logo_img {width: 150px}
+  .footgnb ul { gap: 10px;font-size:0.7rem; }
+}
+@media all and (max-width:768px) {
+  .footgnb { display: none; }
+  .foot_top .left { margin: auto;}
+  .foot_bot { display: block; text-align: center;}
+  .footer .sns {justify-content: center;}
+  .flex_right { justify-content: center;text-align: center; }
+  /* .footer .copyright { order:2 } */
+  .footer .admin { text-align: center; /* order:1;  margin-bottom:20px; */ }
+}
+
 </style>
 
 <script src="./js/nav.js"></script>

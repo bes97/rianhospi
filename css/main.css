@@ -446,6 +446,7 @@ body {
 @media all and (max-width:860px) {
   .con4 { height: auto;}
   .con4 .slider { width: 100%;}
+  .con4 .flex_right {display: block;width: calc(100% - 20px);padding-bottom: 50px;}
   .con5 .rightbox, .con5 .leftbox {max-width: 380px;  }
   .con8 {padding-bottom: 5vw;}
  }
@@ -453,6 +454,7 @@ body {
 @media all and (max-width:768px) {
   .con2 .slide1wrap { width: 100%; }
   .con2 .slide2wrap { width: 70%;    padding-bottom: 65%;margin: auto;}
+  .con4 .flex_right {padding-bottom: 0px;}
   .con6 .flex_hcenter { display: block; }
   .con6 .left { width: 100%;}
   .con6 .right { position: relative; width: 80%;margin-left:auto;}
@@ -465,7 +467,8 @@ body {
   .con3 .txt1 strong { display: block; }
   .con5 {padding-bottom:0;background-size: 40%,300%;background-position: left top, left top ;}
   .con5 .wpc {margin-top: 100vw;padding:50px 20px;background-color: #cbcbcd;}
-  .con5 .leftbox { padding-bottom: 50px; }
+  .con5 .col {margin-left: 0;max-width: calc(100% - 20px);}
+  .con5 .leftbox { padding-bottom: 50px;justify-content: flex-start; }
   .con5 .rightbox .tit1 {width: 100%;text-align: center;}
   .con5 .rightbox .certif {padding-left: 0px;}
   .con6 .left h4 {padding-left: 10px;}
