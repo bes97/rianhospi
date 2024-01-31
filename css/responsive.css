@@ -11,6 +11,8 @@
 
 @media all and (max-width: 1200px) {
   .subpage h4 {font-size:10vw;}
+  .lnb ul { flex-wrap:wrap;height:auto; padding: 20px 0}
+
 
   .philo_area .leftbox {padding: 100px 0 100px 8vw; }
 
@@ -54,7 +56,7 @@
     font-size: clamp(1rem ,3vw, 20px);
   }
   .academic .flex { display: flex;flex-wrap: wrap;justify-content: center;}
-  .academic .backgroundsub { padding-left: 20px; padding-right: 20px; }
+  .academic .backgroundsub { padding: 50px 20px !important; }
   .thesis .flex{display: block;}
 
   .sub1_3 .flexspace { display: block;}
@@ -68,7 +70,10 @@
 
 
 @media all and (max-width:768px) {
+  .subpage { padding-top: 50px; }
   .subpage .maintitwrap {margin-bottom: 50px;}
+  .maintop { height: auto;}
+  .lnbtit { padding-bottom:30px; }
 
   .subtitwrap h3{ 
     font-size: 1rem;letter-spacing: -1px; }
@@ -98,10 +103,10 @@
   .sub1_2 .con1 .content .subtitwrap p.txt {font-size: 2rem;}
   .sub1_2 .con1 .rightbox .bot { margin-bottom: 30px;}
   
-  .sub1_2 section.mbcon50 { margin-bottom: 0; }
+  .sub1_2 section.mbcon50 { margin-bottom: 0 !important; }
   .volunteer .left { padding: 50px 0px; }
   .volunteer .left ._img1, .volunteer .left ._img2 { padding-bottom: 50%; }
-  .volunteer .right {padding: 0px 20px 50px;}
+  .volunteer .right {padding: 0 0 50px 0;}
   .academic .keyword { gap:5px;font-size: 11px; }
   .rollingcustom_img span { width: 130px;}
   .thesis .right {height: 200px;}
@@ -114,4 +119,16 @@
   .time_tb .pursquare_solid { padding: 3px 2px; font-size: 9px;margin-top: 3px;}
   
   .imgbox > div {min-width: auto; max-width:auto; }
+}
+
+
+@media all and (max-width:540px) { 
+
+  .maintop .wpc { padding:0; }
+  .lnbtit { padding-top: 100px;}
+  .lnb ul { font-size:0.7rem }
+  .sub1_2 .con1 .rightbox { padding:20px; }
+  .circlewrap .intxt { font-size: 0.8rem; }
+  .sub1_2 .con1 .rightbox .certif{ gap:0; }
+
 }

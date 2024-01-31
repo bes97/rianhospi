@@ -514,7 +514,7 @@
   .slidewrap .slick-arrow { left: calc(100% - 480px); }
   .prologueview_area .titwrap { top: 10%;}
 
-  .subpage h2 { font-size: 6.25vw; }
+  .subpage h2 { font-size: max(6.25vw, 1.5rem); }
   .pbt100 { padding-top: 50px;padding-bottom: 50px; }
 }
 
