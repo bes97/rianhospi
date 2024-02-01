@@ -326,6 +326,7 @@
     border-right: 1px solid #ffffff;
   }
   .numberic { 
+    z-index:1;
     position: absolute;top:0;left: 50%;transform: translateX(-50%);
     padding: 5px 10px;background-color: #00000080;color: #ffffff;
     font-family: 'Lato';font-style: italic;font-weight: 300; font-size: 0.9rem;
@@ -577,7 +578,7 @@
   .semiwidegallery.cust1 .left {padding-right: 0px;  }
   .semiwidegallery.cust1 .right {padding-left: 0px;}
   .gallerylist .list.column3 {display: flex;}
-  .gallerylist .list.column3 .col {width:33.33%;padding:0 10px !important;margin-bottom: 20px;}
+  .gallerylist .list.column3 .col {width:33.33%;padding:0 10px !important;margin-bottom: 0px;}
   .gallerylist .list.column3.gapborder .col:nth-child(3n) { border-right: none}
   .gallerylist .list.column2 {display: flex;}
   .gallerylist .list.column2 .col {width:50%;padding:0 10px;margin-bottom: 20px;}
@@ -623,9 +624,9 @@
  
   .gallerylist .titwrap:nth-child(1) .right {display: none;}
   .gallerylist .titwrap:nth-child(1) .left {display: none;}
-  .gallerylist .titwrap {padding:0px 20px 20px}
+  .gallerylist .titwrap {padding:0px 20px 30px}
   .sub3_2 .gallerylist .list .col {padding-top:0;padding-bottom:0;}
-  .gallerylist .list .txtwrap { padding-top: 10px}
+  .gallerylist .list .txtwrap { padding-top: 10px;padding-bottom: 10px;}
   .gallerylist .list h6 { margin-bottom: 10px; }
 
   .after{font-size: 0.8rem !important;}
