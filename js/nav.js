@@ -93,10 +93,14 @@ $(function(){
       $(".fngnbover").append(temp);
     }     
     $('.fngnbover > li ').mouseenter(function(){
-      $(".fnnavsub").show()
-      $(".fnnavsub li").remove();
+     // if ( $(this).data("nav") ) {  서브네비 있을떄만 하위메뉴 출력하기  >> 모바일버전에도 활용 해당메뉴에서 클릴할 수 있께하기
+         $(".fnnavsub").show();
+        $(".fnnavsub li").remove();
+        gnb_depth2($(this).data("nav"),".fnnavsub");
+    //  } else {}
+      
       // $(".header .depth2 ").show();  
-      gnb_depth2($(this).data("nav"),".fnnavsub");
+      
     })
 }
 

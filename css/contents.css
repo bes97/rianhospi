@@ -229,7 +229,7 @@ display: none;
 .sub2_1 .con4 .col .imgwrap { padding-bottom: 64%; }
 .sub2_1 .con4 .col .txt { position: absolute; left: 40px; bottom: 30px;font-family: "Pretendard-Light";font-size: 1rem;color: #fff;}
 
-.titwrap h3 { font-size: 1.7rem;font-weight: 700;}
+.titwrap h3 { font-size: max(1.4rem,1.7vw);font-weight: 700;line-height: 1.5em;}
 
 .sub2_2 .con1 .in { position: relative; }
 .sub2_2 .con1 .imgbox1.imgwrap { padding-bottom: max(56%,50vh);}
@@ -263,7 +263,7 @@ display: none;
 .sub2_2 .rollingcustom { position: relative; color: #fff;}
 .sub2_2 .rollingcustom .track { height: 100%; }
 
-.sub2_3 { padding-bottom: var(--conpadding);  }
+/* .sub2_3 { padding-bottom: var(--conpadding);  } */
 .sub2_3 .gallerywide .imgwrap { padding-bottom: max(50%,200px) }
 .sub2_3 .gallerywide .col { position: relative;margin-bottom: 100px;}
 .sub2_3 .gallerywide .mark { border: 1px solid #fff }
@@ -306,7 +306,7 @@ display: none;
   background-color: #fff;
   letter-spacing: -1px;font-size:0.9rem;
 }
-.sub3_2 .semiwidegallery h4 { position: absolute; left:0;bottom:-13px;font-size: max(5.7vw,2rem);letter-spacing: -1px; }
+.sub3_2 .semiwidegallery h4 { position: absolute; left:0;bottom:-13px;font-size: max(5.7vw,2.5rem);letter-spacing: -1px; }
 .sub3_2 .con2 { background:url(../img/logo_back01.png) no-repeat left bottom var(--background2); }
 .sub3_2 .con4 .gallerylist  .imgwrap { padding-bottom:60%;  }
 .sub3_2 .con2 .tb_d2 { padding-bottom: 20px;text-align: center; }
