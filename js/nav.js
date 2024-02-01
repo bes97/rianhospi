@@ -69,9 +69,10 @@ $(function(){
 
 
   //서브별 추출 첫번째인자>depth1  두번째인자>출력장소
-  gnb_depth2('sub1','.sub1');gnb_depth2('sub2','.sub2');gnb_depth2('sub3','.sub3');gnb_depth2('sub4','.sub4');gnb_depth2('sub5','.sub5');gnb_depth2('sub6','.sub6');gnb_depth2('sub7','.sub7');
-  // gnb_depth2('sub1','sub1');gnb_depth2('sub2','sub2');gnb_depth2('sub3','sub3');gnb_depth2('sub4','sub4');gnb_depth2('sub5','sub5');gnb_depth2('sub6','sub6');gnb_depth2('sub7','sub7');
-
+  if ($(".fnsubmenu").length) {
+      gnb_depth2('sub1','.sub1');gnb_depth2('sub2','.sub2');gnb_depth2('sub3','.sub3');gnb_depth2('sub4','.sub4');gnb_depth2('sub5','.sub5');gnb_depth2('sub6','.sub6');gnb_depth2('sub7','.sub7');
+      // gnb_depth2('sub1','sub1');gnb_depth2('sub2','sub2');gnb_depth2('sub3','sub3');gnb_depth2('sub4','sub4');gnb_depth2('sub5','sub5');gnb_depth2('sub6','sub6');gnb_depth2('sub7','sub7');
+  }
   // depth1만 필요한 경우
   function gnb_depth1() {
     for (let item of result) {
