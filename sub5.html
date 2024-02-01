@@ -24,6 +24,14 @@
   </head>
   <body>
     <div id="wrap">   
+      <div class="popup" id="p001">
+        <button class="close" onclick="popupclose(this)">닫기</button>
+        <div class="popupwrap">
+          <div class="popcont">
+            <iframe src="https://player.vimeo.com/video/897078437?h=8f080baf5c&amp;autoplay=0&amp;loop=1&amp;muted=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""></iframe>
+          </div>
+        </div>
+      </div>
       <header id="header"></header>
       <main>
 
@@ -144,7 +152,7 @@
                     </div>
                     <div class="col_2 flex">
                       <div class="imgwrap"><img src="./img/sub5/sub5_1_img03_5.jpg"></div>
-                      <div class="imgwrap"><img src="./img/sub5/sub5_1_img03_6.jpg"><button class="play"></button></div>
+                      <div class="imgwrap"><img src="./img/sub5/sub5_1_img03_6.jpg"><button class="play" data-target="#p001" onclick="popupbtn(this)"></button></div>
                       <div class="after2"><span class="num">05</span>0.3mm 이내의 얇은 세라믹의 고강도 치아 접착<span class="whitesquare_line">Video view</span> </div>
                     </div>
                   </div> 

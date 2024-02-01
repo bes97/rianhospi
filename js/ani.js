@@ -20,7 +20,6 @@ $(function() {
     //   });
     // } 
 
-
       
     //scrollme 초기화
     let anim_obj = $('.scrollme')
