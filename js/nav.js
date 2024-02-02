@@ -22,18 +22,18 @@ $(function(){
     {depth1:'sub3',depth2:'sub3_9',navhref:'./sub3_9.html',navlabel:'연세리안 임플란트 종류',navtarget:'_self'},
 
     {depth1:'sub4',depth2:'sub_0',navhref:'./sub4.html',navlabel:'치주치료 클리닉',navtarget:'_self'},
-   /* {depth1:'sub4',depth2:'sub4_1',navhref:'./sub4.html',navlabel:'치주과 전문의의 특별한 치주 치료'},
+    {depth1:'sub4',depth2:'sub4_1',navhref:'./sub4.html',navlabel:'치주과 전문의의 특별한 치주 치료'},
     {depth1:'sub4',depth2:'sub4_2',navhref:'./sub4.html#con2',navlabel:'치주 치료의 중요성'},
     {depth1:'sub4',depth2:'sub4_3',navhref:'./sub4.html#con3',navlabel:'치주 치료의 종류'},
     {depth1:'sub4',depth2:'sub4_4',navhref:'./sub4.html#con4',navlabel:'치은 이식술'},
-    {depth1:'sub4',depth2:'sub4_5',navhref:'./sub4.html#con5',navlabel:'건강보험 적용'},*/
+    {depth1:'sub4',depth2:'sub4_5',navhref:'./sub4.html#con5',navlabel:'건강보험 적용'},
     
     {depth1:'sub5',depth2:'sub_0',navhref:'./sub5.html',navlabel:'심미치료 클리닉',navtarget:'_self'},
-   /* {depth1:'sub5',depth2:'sub5_1',navhref:'./sub5.html',navlabel:'심미치료의 중요성'},
+  * {depth1:'sub5',depth2:'sub5_1',navhref:'./sub5.html',navlabel:'심미치료의 중요성'},
     {depth1:'sub5',depth2:'sub5_2',navhref:'./sub5.html#con2',navlabel:'라미네이트'},
     {depth1:'sub5',depth2:'sub5_3',navhref:'./sub5.html#con3',navlabel:'올세라믹 크라운'}, 
     {depth1:'sub5',depth2:'sub5_4',navhref:'./sub5.html#con4',navlabel:'전치부 레진'},
-    {depth1:'sub5',depth2:'sub5_5',navhref:'./sub5.html#con5',navlabel:'전문가 미백'},   */    
+    {depth1:'sub5',depth2:'sub5_5',navhref:'./sub5.html#con5',navlabel:'전문가 미백'},
     
     {depth1:'sub6',depth2:'sub_0',navhref:'./sub6_1.html',navlabel:'자연치보존 클리닉',navtarget:'_self'},
     {depth1:'sub6',depth2:'sub6_1',navhref:'./sub6_1.html',navlabel:'충치치료',navtarget:'_self'},
