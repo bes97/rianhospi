@@ -76,6 +76,16 @@ $(function(){
     if ($(".fnsubmenu").length) {
       gnb_depth2('sub1','.sub1');gnb_depth2('sub2','.sub2');gnb_depth2('sub3','.sub3');gnb_depth2('sub4','.sub4');gnb_depth2('sub5','.sub5');gnb_depth2('sub6','.sub6');gnb_depth2('sub7','.sub7');
     }
+
+      // 서브메뉴 없는 a는 실행 됨
+  $('.fngnbover_mo > li > a').click(function(e){
+    for (let item of MenuData) {
+      let nav_mo = $(this).closest("li")
+      if ( item.depth1 == $(nav_mo).data("nav") ) {
+        if( item.depth2 != "sub_0" )  e.preventDefault();
+      }
+    }
+  })
    }, 100)
 
  
@@ -177,15 +187,7 @@ $(function(){
     }
   } 
 
-  // 서브메뉴 없는 a는 실행 됨
-  $('.fngnbover_mo > li > a').click(function(e){
-    for (let item of MenuData) {
-      let nav_mo = $(this).closest("li")
-      if ( item.depth1 == $(nav_mo).data("nav") ) {
-        if( item.depth2 != "sub_0" )  e.preventDefault();
-      }
-    }
-  })
+
 
    
 
