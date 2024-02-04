@@ -943,16 +943,14 @@ display: none;
 }
 
 .sub6_5 h3 { font-size: 1.5rem; }
-.sub6_5 .con2 { position: relative; }
+.sub6_5 .con2 { position: relative; background: url(../img/sub6/sub6_5_img01.jpg) no-repeat center center / cover;}
 .sub6_5 .content {
-  position: absolute;left:0;top:0;
   width:100%;height:100%;
   padding: 100px 0;
 }
 .sub6_5 .content_in {
   width:min(90%,1500px);
   padding: 100px 0;
-  /*background-color: #ffffff90;*/
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0.5) 30%, rgba(255,255,255,0.5) 71%,rgba(255,255,255,1) 100%);
   border-top: 1px solid var(--primary2);
   border-bottom: 1px solid var(--primary2);
@@ -962,7 +960,6 @@ display: none;
 }
 .sub6_5 .content_in h3{font-weight: 700;}
 .sub6_5 .content_in .txt { width: 100%; }
-.sub6_5 .con2 .fullimg { height: clamp(900px,100vh,1100px);}
 
 
 /***  sub7 ***/
