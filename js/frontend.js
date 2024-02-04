@@ -92,7 +92,10 @@ $(function(){
     arrows: true,
     dots: true,
     customPaging: function (slider, i) {
-      curpage = '<span class="curpage">' + (i + 1) + ' RE :</span>';
+      let page_cnt = i + 1
+      let page_cnt_str
+      if (page_cnt < 10) { page_cnt_str = '0' + page_cnt }
+      curpage = '<span class="curpage"><i>' + page_cnt_str + '</i><i>RE</i><i>:</i></span>';
       // total = '<span class="total">' + slider.slideCount + '</span>';
       // return curpage + total;
       return curpage

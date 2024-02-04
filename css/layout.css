@@ -153,7 +153,7 @@
   .roundsquare {display: block;padding: 0.3em 1em; border: 1px solid #ffffff; border-radius: 20px; font-family: "Pretendard-Light";font-size: 0.8rem; text-align: center;}
   .pursquare_solid { display:inline-block;padding: 0.2em 0.4em; background-color: var(--primary2);color: #fff;font-size: 11px; }
 
-  .hr_green { width: calc( 100% - 100px);height:1px;background-color: var(--subcolor_g2);margin: auto;   }
+  .hr_green { width: calc( 100% - 100px);height:1px;background-color: var(--subcolor_g);margin: auto;   }
   .hr_primary { width: calc( 100% - 100px);height:1px;background-color: var(--primary2);margin: auto;   }
 
 
@@ -165,7 +165,7 @@
   .time_tb tbody {
     font-family: 'Lato', sans-serif; font-weight:300;
   }
-  .time_tb tbody th, .time_tb thead .bodyth { background-color: var(--subcolor_g2);color: #ffffff;font-weight: normal;   }
+  .time_tb tbody th, .time_tb thead .bodyth { background-color: var(--subcolor_g);color: #ffffff;font-weight: normal;   }
 
 
 /**** main-top bigsize ****/
@@ -230,7 +230,7 @@
 /**** gallery ****/
   .after { 
     position: absolute; left: 7%; bottom:7%;
-    font-size: 1.5rem;font-family: 'Lato', sans-serif; font-weight:300;font-style: italic;color: #fff;
+    font-size: 1rem;font-family: 'Lato', sans-serif; font-weight:300;font-style: italic;color: #fff;
   }
   .after strong { font-family: 'Lato', sans-serif;font-weight: 700;margin-left: 5px; }
   .afterthumcircle { 
@@ -288,9 +288,11 @@
   .gallerylist .titwrap:nth-child(1) { display: block; position: relative; text-align: center;}
   .gallerylist .titwrap:nth-child(1) .left { 
     position: absolute;left: 70px;top: 50px;
+    font-family: 'Lato', sans-serif; font-weight:300;letter-spacing: 0;
   }
   .gallerylist .titwrap:nth-child(1) .right { 
     position: absolute;right: 70px;top: 50px;
+    font-family: 'Lato', sans-serif; font-weight:300;letter-spacing: 0;
   }
   .gallerylist .titwrap { padding: 50px 70px; }
   .gallerylist .titwrap .smalltxt { font-size: 0.9rem; }
@@ -372,7 +374,7 @@
     margin: 0 auto; margin-bottom: 20px;
   }
   .rims .imgbox2 img { object-fit: contain; }
-  .rims .col{padding-top: 50px;padding-bottom: 50px;border-right: 1px solid #ccc; }
+  .rims .col{padding-top: 50px;padding-bottom: 50px;border-right: 1px solid #2f847630; }
   .rims .col:last-child { border-right: none; }
 
   /**/
