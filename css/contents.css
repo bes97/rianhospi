@@ -53,9 +53,11 @@ display: none;
 .maintop { height: 450px; background-repeat: no-repeat; background-position: center center; background-size: cover;}
 .maintop .wpc { height: 100%;color: #ffffff; }
 .lnbtit { width: 100%; height: calc(100%  - 80px);padding-top: 140px;font-size: 1.25rem; }
-.lnb { width: 100%;border-top: 1px solid #ffffff20;color: #e2e2e2; font-size: 0.8rem; }
-.lnb ul{ display: flex;justify-content: center;align-items: center; gap: max(20px,3%);height: 80px;white-space: pre; }
-.lnb .on { color: #ffffff;}
+.lnb { width: 100%;border-top: 1px solid #ffffff14;color: #e2e2e2; font-size: 0.8rem; }
+.lnb ul{ display: flex;justify-content: center;align-items: center; gap: max(20px,3%);height: 80px;white-space: pre;color: #e2e2e2 }
+.lnb li { height: 100%;display: flex;justify-content: center;align-items: center;border-top: 1px solid #ffffff00;transition: 0.3s; }
+.lnb li.on  { color: #ffffff;border-top-color:#ffffff}
+
 .lnb.no { opacity: 0; } /* lnb 사용안할 경우 */
 
 .top_sub1 { background-image: url(../img/sub1/sub1_top.jpg); }
@@ -772,6 +774,7 @@ display: none;
 .sub5_1 .list3 {margin: 0 20px}
 .sub5_1 .con2 .column5 .col { padding-top: 30px;padding-bottom: 30px; }
 .sub5_1 .popcont {height: 90%;width: auto; }
+.sub5_1 .popcont video{height: 100%;width: auto; }
  
 /**** sub6 ****/
 .sub6_1 .con1_1 {position: relative;z-index: 1;}

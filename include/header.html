@@ -32,7 +32,7 @@
   <button class="nav_btn"><span></span><span></span><span></span></button>
 </div>
 <div class="only_mo nav_wrap">
-  <div class="mo_nav flex">
+  <div class="mo_nav">
     <div class="left">
       <nav class="gnb">
         <div class="fngnb_mo depth1">
@@ -44,11 +44,6 @@
         <a href="#" title="네이버" class="sns2"></a>
         <a href="#" title="블로그" class="sns3"></a>
         <a href="#" title="인스타" class="sns4"></a>
-      </div>
-    </div>
-    <div class="right">
-      <div class="depth2">
-        <ul class="fnnavsub_mo "></ul>
       </div>
     </div>
   </div>
@@ -99,6 +94,7 @@
 .sns a.sns3 { background-image: url(./img/common/sns_p_blog.png); }
 .sns a.sns4 { background-image: url(./img/common/sns_p_insta.png); }
 
+
 /* 모바일용 네비 */
 .only_mo { display: none; }
 .mo_header { 
@@ -115,21 +111,16 @@
 
 .mo_nav { 
     position: fixed;left:0;top:0;z-index:9998;
-    width:100%;height:100vh;padding-top:100px;
-    background-color: #ffffff;
+    width:100%;height:100vh;padding-top:70px;
+    background-color: #ffffffdd;
     font-size: 15px; }
-.mo_nav .right {padding-left:5%;}
-.mo_nav .left { flex:0 0 145px; }
-
-.mo_nav .depth1 ul{ 
-  display: block;height: 100%;font-size: 1rem;
-} 
-.mo_nav .depth1 li { padding:5px 10px; }
-.mo_nav .depth1 li.on { background-color: var(--primary2);color:#ffffff }
-.mo_nav .sns { position: absolute;bottom:50px;left:10px; }
-
-.mo_nav .depth2 li { padding: 5px; }
-
+.mo_nav .left { flex:0 0 100%; }
+.mo_nav .depth1 ul{ display: block;height: 100%;font-size: 1rem; } 
+.mo_nav .fngnbover_mo > li { padding: 0px 20px }
+.mo_nav .fngnbover_mo > li > a  {  display: block;padding:10px 5px;border-bottom:1px solid #ffffff; }
+.mo_nav .fngnbover_mo > li.on {background-color: var(--primary2);color:#ffffff }
+.mo_nav .sns { gap:20px;  background-color: #ffffff; padding: 20px 30px; /*position: absolute;bottom:50px;left:10px;*/ }
+.mo_nav .fngnbover_mo .depth2 li { padding: 7px 20px; }
 
 .nav_btn {
     position: absolute;
@@ -163,7 +154,7 @@
 }
 
 .nav_wrap.on {display: block;}
-.mo_header.on .logo_img { background-image: url(./img/common/logo_p.png) }
+.mo_header.on .logo_img { background-image: url(./img/common/logo_p2.png) }
 .mo_header.on .nav_btn span:nth-child(1) {
     transform: rotate(45deg);
     transform-origin: top left;
